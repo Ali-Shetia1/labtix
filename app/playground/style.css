@@ -1,0 +1,13 @@
+
+.image{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: top;
+  transition: object-position var(--scroll-duration, 5s);
+}
+
+
+.image:hover {
+  object-position: bottom;
+}
