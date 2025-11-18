@@ -10,7 +10,7 @@ async function connectDB() {
     if (cached.conn) {
         return cached.conn
     }
-    if (!cached.promis) {
+    if (!cached.promise) {
         const opts = {
             bufferCommands: false
         }
