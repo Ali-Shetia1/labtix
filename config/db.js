@@ -14,7 +14,7 @@ async function connectDB() {
         const opts = {
             bufferCommands: false
         }
-        cached.promise = mongoose.connect(`${process.env.MONGODB_URL}/labtix`, opts).then(mongoose => {
+        cached.promise = mongoose.connect(process.env.MONGODB_URL, opts).then(mongoose => {
             return mongoose
         })
     }
